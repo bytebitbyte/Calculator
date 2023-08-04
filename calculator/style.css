@@ -1,0 +1,56 @@
+body {
+    background-color: black;
+}
+#inputelement {
+    display: flex;
+    justify-content:  flex-end;
+}
+#integerInput {
+    border-width: 0px;
+    background-color: black;
+    color: white;
+    width: 200vh;
+    height: 18vh;
+    text-align: right;
+    font-size: 5rem;
+}
+h1 {
+    text-align: right;
+    font-size: 5rem;
+    color: white;
+}
+.keypad {
+    width: 200vh;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.calculator-button {
+    font-size: 24px;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #e0e0e0;
+    cursor: pointer;
+    
+}
+.operator-button {
+    background-color: #ff9800;
+    color: white;
+    font-size: 18px;
+    padding: 20px;
+    text-align: center;
+}
+.container {
+    display: flex;
+    justify-content:  flex-end;
+}
+.delete {
+    grid-column: 1 / span 2; /* Span 3 columns */
+    background-color: red;
+}
+.AC {
+    background-color: red;
+}
