@@ -72,11 +72,11 @@ $(".equal").click(function() {
                 location.reload();
             }
             else{
-                if ((currentValue / initialValue) > cap || (currentValue / initialValue) < (cap * -1)) {
+                if ((initialValue / currentValue) > cap || (initialValue / currentValue) < (cap * -1)) {
                     alert("Math Error");
                     location.reload();
                 } else {
-                    displayValue.val(currentValue / initialValue);
+                    displayValue.val(initialValue / currentValue);
                 }
             }
             break;
